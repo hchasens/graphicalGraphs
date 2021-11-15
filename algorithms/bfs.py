@@ -11,6 +11,4 @@ def bfs(cur: Node):
         for v in u.edges:
             if not v.acvd:          #   find all it's unfound edges
                 q.append(v)         #   add that edge to the queue enqueue
-        
-    
 
