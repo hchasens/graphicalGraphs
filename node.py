@@ -4,6 +4,7 @@ class NodeManager:
     """
     Manages Nodes
     Contains a list of all Nodes and updates them graphicly when they're moved or dragged. Will redraw edges after a node moves.
+    Node radius is 10, diamater is 20
     """
     def __init__(self):
         pass
