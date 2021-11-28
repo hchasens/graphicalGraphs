@@ -5,7 +5,7 @@ from algorithms.dfs import *
 from node import *
 import graphics.controller as ctl
 from graphGen import *
-
+import graphics.model as model
 
 
 def main():
@@ -13,15 +13,23 @@ def main():
 
     c = turtle.Turtle()         # a dumby turlte who's exsistance is to get us the tkinter canvas
     c.ht()
+    screen = c.getscreen()
 
-    genRanGraph(ln)
-
-    bfs(ln[0])
-
-    controller = ctl.Controller(c, ln)
+    m = model.Model(screen)
 
 
-    c.getscreen().mainloop()
+    #genRanGraph(ln)
+
+    # bind left click to 'leftClick'
+    # if leftclick not on node, make node
+    # else: (clicked on node)
+    #       if next click on aother node:
+    #               add edge between first and second node
+    #       else:
+    #           make new node and create edge between first node and last node
+    # 
+
+    screen.mainloop()
     
 
 

@@ -73,8 +73,12 @@ class Node:
             self.t.color('black')
 
     def activated(self, s: bool):
-        self.acvd = bool
-        self.t.color('red')
+        self.acvd = s
+        print(self.acvd)
+        if self.acvd:
+            self.t.color('red')
+        else:
+            self.t.color('blue')
         return True
 
 
