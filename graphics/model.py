@@ -49,7 +49,8 @@ class Model:
                 self.selected = None                            # clear the selected
                 return
             else:
-                bfs(cur)
+                #bfs(cur)
+                dfs(cur)
                 self.reset()
                 return
 
